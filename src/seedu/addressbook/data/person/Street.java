@@ -7,11 +7,15 @@ package seedu.addressbook.data.person;
 public class Street {
 	private String streetName_;
 	
+	public Street(String streetName){
+		streetName_ = streetName;
+	}
+	
 	public String getStreetName(){
 		return streetName_;
 	}
 	
 	public void setStreetName(String streetName){
-		this.streetName_ = streetName;
+		streetName_ = streetName;
 	}
 }

@@ -7,11 +7,15 @@ package seedu.addressbook.data.person;
 public class Unit {
 	private int unitNumber_;
 	
+	public Unit(int unitNumber){
+		unitNumber_ = unitNumber;
+	}
+	
 	public int getUnitNumber(){
 		return unitNumber_;
 	}
 	
 	public void setUnitNumber(int unitNumber){
-		this.unitNumber_ = unitNumber;
+		unitNumber_ = unitNumber;
 	}
 }

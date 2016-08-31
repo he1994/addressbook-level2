@@ -7,11 +7,15 @@ package seedu.addressbook.data.person;
 public class Block {
 	private int blockNumber_;
 	
+	public Block(int blockNumber){
+		blockNumber_ = blockNumber;
+	}
+	
 	public int getBlockNumber(){
 		return blockNumber_;
 	}
 	
 	public void setBlockNumber(int blockNumber){
-		this.blockNumber_ = blockNumber;
+		blockNumber_ = blockNumber;
 	}
 }
