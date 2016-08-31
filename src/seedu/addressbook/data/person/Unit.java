@@ -7,6 +7,8 @@ package seedu.addressbook.data.person;
 public class Unit {
 	private int unitNumber_;
 	
+	public Unit(){}
+	
 	public Unit(int unitNumber){
 		unitNumber_ = unitNumber;
 	}

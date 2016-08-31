@@ -7,6 +7,8 @@ package seedu.addressbook.data.person;
 public class Block {
 	private int blockNumber_;
 	
+	public Block(){}
+	
 	public Block(int blockNumber){
 		blockNumber_ = blockNumber;
 	}

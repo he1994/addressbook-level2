@@ -7,6 +7,8 @@ package seedu.addressbook.data.person;
 public class PostalCode {
 	private int postal_;
 	
+	public PostalCode(){}
+	
 	public PostalCode(int postal){
 		postal_ = postal;
 	}

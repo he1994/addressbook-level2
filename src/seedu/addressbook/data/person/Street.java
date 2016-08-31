@@ -7,6 +7,8 @@ package seedu.addressbook.data.person;
 public class Street {
 	private String streetName_;
 	
+	public Street(){}
+	
 	public Street(String streetName){
 		streetName_ = streetName;
 	}
