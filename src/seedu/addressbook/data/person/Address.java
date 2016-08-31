@@ -13,7 +13,12 @@ public class Address {
     public static final String ADDRESS_VALIDATION_REGEX = ".+";
 
     public final String value;
+    private Block blockNumber = new Block();
+    private Street streetName = new Street();
+    private Unit unitNumber = new Unit();
+    private PostalCode postal = new PostalCode();
     private boolean isPrivate;
+    private String[] addressComponents;
 
     /**
      * Validates given address.
@@ -25,8 +30,20 @@ public class Address {
         if (!isValidAddress(address)) {
             throw new IllegalValueException(MESSAGE_ADDRESS_CONSTRAINTS);
         }
+        setAddressFields(address);
         this.value = address;
     }
+
+    /**
+     * Split the address into various fields
+     */
+	private void setAddressFields(String address) {
+		addressComponents = address.split(",",-1);
+        blockNumber.setBlockNumber(addressComponents[0]);
+        streetName.setStreetName(addressComponents[1]);
+        unitNumber.setUnitNumber(addressComponents[2]);
+        postal.setPostal(addressComponents[3]);
+	}
 
     /**
      * Returns true if a given string is a valid person email.
