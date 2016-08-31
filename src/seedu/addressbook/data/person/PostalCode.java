@@ -5,19 +5,19 @@ package seedu.addressbook.data.person;
  */
 
 public class PostalCode {
-	private int postal_;
+	private String postal_;
 	
 	public PostalCode(){}
 	
-	public PostalCode(int postal){
+	public PostalCode(String postal){
 		postal_ = postal;
 	}
 	
-	public int getPostal(){
+	public String getPostal(){
 		return postal_;
 	}
 	
-	public void setPostal(int postal){
+	public void setPostal(String postal){
 		postal_ = postal;
 	}
 }

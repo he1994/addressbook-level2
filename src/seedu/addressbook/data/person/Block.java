@@ -5,19 +5,19 @@ package seedu.addressbook.data.person;
  */
 
 public class Block {
-	private int blockNumber_;
+	private String blockNumber_;
 	
 	public Block(){}
 	
-	public Block(int blockNumber){
+	public Block(String blockNumber){
 		blockNumber_ = blockNumber;
 	}
 	
-	public int getBlockNumber(){
+	public String getBlockNumber(){
 		return blockNumber_;
 	}
 	
-	public void setBlockNumber(int blockNumber){
+	public void setBlockNumber(String blockNumber){
 		blockNumber_ = blockNumber;
 	}
 }

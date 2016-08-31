@@ -5,19 +5,19 @@ package seedu.addressbook.data.person;
  */
 
 public class Unit {
-	private int unitNumber_;
+	private String unitNumber_;
 	
 	public Unit(){}
 	
-	public Unit(int unitNumber){
+	public Unit(String unitNumber){
 		unitNumber_ = unitNumber;
 	}
 	
-	public int getUnitNumber(){
+	public String getUnitNumber(){
 		return unitNumber_;
 	}
 	
-	public void setUnitNumber(int unitNumber){
+	public void setUnitNumber(String unitNumber){
 		unitNumber_ = unitNumber;
 	}
 }
