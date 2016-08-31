@@ -38,10 +38,10 @@ public class Address {
      */
 	private void setAddressFields(String address) {
 		addressComponents = address.split(",",-1);
-        blockNumber.setBlockNumber(addressComponents[0]);
-        streetName.setStreetName(addressComponents[1]);
-        unitNumber.setUnitNumber(addressComponents[2]);
-        postal.setPostal(addressComponents[3]);
+        blockNumber.setBlockNumber(addressComponents[0].trim());
+        streetName.setStreetName(addressComponents[1].trim());
+        unitNumber.setUnitNumber(addressComponents[2].trim());
+        postal.setPostal(addressComponents[3].trim());
 	}
 
     /**
