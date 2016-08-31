@@ -9,15 +9,18 @@ public class PostalCode {
 	
 	public PostalCode(){}
 	
-	public PostalCode(String postal){
-		postal_ = postal;
-	}
-	
 	public String getPostal(){
 		return postal_;
 	}
 	
 	public void setPostal(String postal){
 		postal_ = postal;
+	}
+	
+	@Override
+	public boolean equals(Object other){
+		return other == this
+				|| (other instanceof PostalCode // instanceof handles nulls
+		        && this.postal_.equals(((PostalCode) other).postal_));
 	}
 }

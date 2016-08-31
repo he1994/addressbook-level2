@@ -9,15 +9,18 @@ public class Street {
 	
 	public Street(){}
 	
-	public Street(String streetName){
-		streetName_ = streetName;
-	}
-	
 	public String getStreetName(){
 		return streetName_;
 	}
 	
 	public void setStreetName(String streetName){
 		streetName_ = streetName;
+	}
+	
+	@Override
+	public boolean equals(Object other){
+		return other == this
+				|| (other instanceof Street // instanceof handles nulls
+		        && this.streetName_.equals(((Street) other).streetName_));
 	}
 }
