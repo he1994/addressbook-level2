@@ -57,6 +57,10 @@ public class Person implements ReadOnlyPerson {
     public Address getAddress() {
         return address;
     }
+    
+    public int getSequenceNumber() {
+        return sequenceNumber;
+    }
 
     @Override
     public UniqueTagList getTags() {
