@@ -1,25 +1,30 @@
 package seedu.addressbook.data.person;
 
+/**
+ * 
+ * Stores the details of the contacts 
+ *
+ */
 public class Contact {
 
-	public String value;
-	protected boolean isPrivate;
+    public String value;
+    protected boolean isPrivate;
 
-	public Contact() {
+    public Contact() {
 		super();
 	}
 
 	@Override
-	public String toString() {
+    public String toString() {
 	    return value;
 	}
 
 	@Override
-	public int hashCode() {
+    public int hashCode() {
 	    return value.hashCode();
 	}
 
-	public boolean isPrivate() {
+    public boolean isPrivate() {
 	    return isPrivate;
 	}
 
